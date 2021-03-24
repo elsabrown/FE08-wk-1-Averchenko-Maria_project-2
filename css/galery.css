@@ -1,0 +1,42 @@
+.galery-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+  height: 100%;
+}
+
+.galery-hover {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(204, 58, 58, 0.74);
+  padding-top: 90px;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.galery-row_pic:hover .galery-hover {
+  display: block;
+  opacity: 1;
+}
+
+.galery-row_img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.galery-row_pic {
+  position: relative;
+  transition: 0.5s;
+}

@@ -1,0 +1,35 @@
+.quote-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.photo {
+  width: 100%;
+}
+
+.quote-container_quote {
+  background-color: #53354a;
+  padding-left: 70px;
+  width: 100%;
+}
+
+.quote-container_quote-text {
+  font-family: "Cardo", serif;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 30px;
+  max-width: 510px;
+  padding-top: 70px;
+}
+
+.quote-container_quote-sign {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
