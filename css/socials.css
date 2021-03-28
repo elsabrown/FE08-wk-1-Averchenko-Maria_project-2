@@ -13,7 +13,7 @@
 }
 
 .socials-item:last-child {
-  margin-right: 0px;
+  margin-right: -15px;
 }
 
 .socials-item_cover {
@@ -34,7 +34,29 @@
   height: 270px;
   object-fit: cover;
   display: block;
-  
+}
+
+@media (max-width: 1171px) {
+  .avatar {
+    width: 240px;
+    height: 240px;
+  }
+.socials-item_cover{
+  max-width: 240px;
+  max-height: 240px;
+}
+.socials-item {
+  margin-right: 15px;
+}
+.socials-item:last-child {
+  margin-right: 0px;
+}
+}
+
+@media (max-width: 1030px) {
+  .socials-wraper {
+    flex-wrap: wrap;
+  }
 }
 
 .socials-item_text {

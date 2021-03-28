@@ -76,10 +76,9 @@
 .header-intro::before {
     content: "";
     display: block;
-    width: 1150px;
+    width: 1120px;
     border-bottom: 1px solid rgba(255,255,255, 0.5);
     margin-bottom: 155px;
-
   }
 
 .header-intro_title {

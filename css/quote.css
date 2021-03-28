@@ -1,35 +1,113 @@
-.quote-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
+.quote {
+  max-width: 1900px;
 }
 
-.photo {
-  width: 100%;
+.slider {
+  max-height: 500px;
+  position: relative;
+  /* background-color: #53354a; */
+  border: none;
 }
 
-.quote-container_quote {
+.slider-pic {
+  max-width: 50%;
+  /* width: 50%; */
+  min-width: 0px;
+}
+
+.slider-item {
+  display: flex;
   background-color: #53354a;
-  padding-left: 70px;
-  width: 100%;
+  transition: transform 0.6s ease;
 }
 
-.quote-container_quote-text {
+.slider-quote {
+  max-width: 50%;
+  padding-left: 70px;
+  background-color: #53354a;
+  min-width: 0px;
+}
+
+.slider-quote_text {
+  max-width: 500px;
+  display: block;
   font-family: "Cardo", serif;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 34px;
+  line-height: 38px;
   font-weight: 400;
   font-style: italic;
   color: #ffffff;
   margin-bottom: 30px;
-  max-width: 510px;
   padding-top: 70px;
 }
 
-.quote-container_quote-sign {
+@media (max-width: 1171px) {
+  .slider-quote_text {
+    margin-bottom: 10px;
+    padding-top: 60px;
+  }
+}
+
+.slider-quote_sign {
+  display: block;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 13px;
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+/* Стили для слайдера */
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+  min-width: 0px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+}
+
+/* Активная точка */
+.slider .slick-dots li.slick-active button {
+  border: none;
+  background-color: #fff;
+}
+
+/* Точки (булиты) */
+.slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  /* margin-top: -50px; */
+  position: absolute;
+  top: 70%;
+  left: 70%;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+  z-index: 10;
+}
+
+/* Элемент точки */
+.slider .slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #755d6e;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.slider-buttons {
+  text-align: center;
 }
