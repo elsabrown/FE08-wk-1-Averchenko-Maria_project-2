@@ -1,7 +1,6 @@
 .header {
   background-image: url(/images/bg/bg-header.png);
   background-repeat: no-repeat;
-  /* background-position: center; */
   background-size: cover;
   position: relative;
   padding: 38px 0 150px;
@@ -22,6 +21,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 38px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -45,6 +46,7 @@
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-item {
@@ -54,6 +56,19 @@
 
 .nav-item:last-child {
   margin-right: 0px;
+}
+
+@media (max-width: 770px) {
+  .nav-item {
+    margin-right: 10px;
+    
+  }
+  .nav-item:last-child {
+    margin-right: 0px;
+  }
+  .logo {
+  margin-bottom: 30px;
+  }
 }
 
 .nav-item_list {
@@ -74,12 +89,13 @@
 }
 
 .header-intro::before {
-    content: "";
-    display: block;
-    width: 1120px;
-    border-bottom: 1px solid rgba(255,255,255, 0.5);
-    margin-bottom: 155px;
-  }
+  content: "";
+  display: block;
+  max-width: 1145px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 155px;
+  align-items: center;
+}
 
 .header-intro_title {
   font-family: "OpenSans", "Arial", sans-serif;
